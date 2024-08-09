@@ -11,12 +11,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: purple;
+    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     color: white;
+    height: 50px;
 }
-
-
+#logo{
+    border-radius: 40%;
+    height: 35px;
+    width: 35px;
+}
+input{
+    width: 500PX;
+}
 
 .input-container {
     display: flex;
@@ -28,6 +35,7 @@ nav {
     padding: 5px;
     border-radius: 5px;
     outline: none;
+    width: 250px;
 }
 
 #search-icon {
@@ -77,10 +85,20 @@ nav {
         margin-left: 10px;
         cursor: pointer;
     }
+    .background-image h2{
+        font-size: 18px;
+    }
+    .home{
+        margin: 15px 15px 0px 0px;
+    }
+    .background-image{
+        width: 60%;
+       }
+
 }
 
 /* mobile */
-@media (max-width: 600px) {
+@media (max-width: 420px) {
     nav {
         height: 40px;
         padding: 5px 15px;
@@ -91,7 +109,7 @@ nav {
         margin-right: 15px;
     }
     #search {
-        width: 170px;
+        width: 150px;
         height: 25px;
     }
     #search-icon {
@@ -110,4 +128,132 @@ nav {
         height: 20px;
         margin-left: 5px;
     }
+    .home{
+        margin: 20px 0px;
+        padding: 10px 20px;
+    }
+    .categories{
+        padding: 5px;
+        height: 70px;
+        width: 1px;
+        height: 1px;
+        margin-right: 15px;
+        }
+    .categories h3{
+        font-size: 7px;
+        padding: 2px;
+        margin-top: 2px;
+        width: 100px;
+        margin: 10px;
+    }
+    .categories li{
+        padding: 20px 0;
+        font-size: 2vh;
+    }
+    
+    .background-image{
+        background-size: cover;
+        width: 60%;
+        height: 15%;
+        margin-left: 15px;
+    }
+    .background-image img{
+        width: 100px;
+    }
+    .background-image h2{
+        font-size: 10px;
+     }
+
+    
+}
+
+/* home */
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 20px 20px 0px 0px;
+    justify-content: space-evenly;
+    
+}
+.categories{
+    background-color: white;
+    border: 1px solid wheat;
+    padding: 15px;
+    border-radius: 5%;
+    width: 230px;
+    height: 230px;
+}
+.categories h3{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 7px;
+}
+.categories li{
+    list-style-type: none;
+    padding: 8px 0;
+    padding-left: 20px;
+}
+.categories li a{
+    text-decoration: none;
+    color: black;
+
+}
+.background-image{
+    background-image: url(./images/dARK\ \(1\).jpg);
+    color: white;
+    width: 100%;
+    font-family: cursive;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 261px;
+  border-radius: 30px;
+}
+.background-image h2{
+    font-size: 28px;
+    z-index: 2;
+    text-align: center;
+}
+.background-image img{
+    border-radius: 0px 20px 20px 0px;
+    margin-right: -208px;
+    width: 260px;
+}
+/* smart phones */
+#mob-heading{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.mobiles{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    justify-content: space-around;
+}
+.mobiles div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.mobiles div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: transparent;
+}
+.mobiles span p{
+    padding: 3px;
+    font-size: small;
+}
+.mobiles span p:first-child{
+    font-weight: bold;
 }
