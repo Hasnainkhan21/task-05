@@ -93,6 +93,7 @@ input{
     }
     .background-image{
         width: 60%;
+        
        }
 
 }
@@ -153,13 +154,14 @@ input{
     }
     
     .background-image{
-        background-size: cover;
-        width: 60%;
-        height: 15%;
-        margin-left: 15px;
+      
+        visibility: hidden;
     }
     .background-image img{
         width: 100px;
+        visibility: visible;
+        gap: 10px;
+        margin-right: 20px;
     }
     .background-image h2{
         font-size: 10px;
@@ -245,6 +247,7 @@ input{
     text-align: center;
     margin: 10px 0;
     overflow: hidden;
+    transition: all 0.2s ease; 
 }
 .mobiles div img{
     height: 130px;
@@ -361,7 +364,7 @@ body {
 }
 
 .notify-bar {
-    background-color: #000000;
+    background-color: #ff3f3f;
     color: #fff;
     padding: 5px;
     position: absolute;
@@ -448,13 +451,13 @@ body {
     max-width: 500px;
     box-sizing: border-box;
     padding: 10px;
-    
+    transition: transform 0.2s ease;
     
 }
 .box:hover{
     box-shadow: 0 8px 8px rgb(66, 255, 151);
     transform: scale(1.02);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 .box-img {
     width: 250px;
