@@ -228,6 +228,8 @@ input{
 /* smart phones */
 #mob-heading{
     margin-top: 80px;
+    position: relative;
+    left: 42%;
     margin-bottom: 10px;
     padding: 10px 20px;
 }
