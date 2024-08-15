@@ -458,9 +458,9 @@ body {
     cursor: pointer;
 }
 .box:hover{
-    box-shadow: 0 8px 8px rgb(66, 255, 151);
+    box-shadow: 0 9px 9px rgb(66, 255, 151);
     transform: scale(1.02);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 .box-img {
     width: 250px;
